@@ -1,109 +1,42 @@
-/* General */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
-ul {
-  list-style-type: none;
-}
-
-a {
-  text-decoration: none;
-  color: #000;
-}
-
-/* Navbar */
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px;
-  background-color: #fff;
-}
-
-.navbar ul {
-  display: flex;
-  gap: 20px;
-}
-
-.search-bar {
-  padding: 5px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-/* Hero section */
-.hero {
-  text-align: center;
-  padding: 50px;
-}
-
-.hero h1 {
-  font-size: 2.5em;
-  color: #174c7f;
-}
-
-.hero p {
-  font-size: 1.2em;
-  color: #5a5a5a;
-}
-
-.cta-button {
-  padding: 15px 30px;
-  background-color: #ff5722;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  font-size: 1em;
-  cursor: pointer;
-  margin-top: 20px;
-}
-
-.cta-button:hover {
-  background-color: #e64a19;
-}
-
-/* Browser Mockup */
-.browser-mockup {
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  width: 80%;
-  margin: 50px auto;
-  padding: 20px;
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
   text-align: center;
 }
 
-.browser-header {
-  display: flex;
-  justify-content: flex-start;
-  gap: 10px;
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
-.dot {
-  height: 10px;
-  width: 10px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
-.dot.red {
-  background-color: #ff5f57;
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
 }
 
-.dot.yellow {
-  background-color: #ffbd2e;
+.card {
+  padding: 2em;
 }
 
-.dot.green {
-  background-color: #28c840;
-}
-
-.browser-url {
-  padding: 10px;
-  background-color: #f9f9f9;
-  border-radius: 5px;
-  font-family: "Inter", sans-serif;
-  color: #333;
+.read-the-docs {
+  color: #888;
 }
