@@ -1,0 +1,85 @@
+.navbar {
+  display: flex;
+  justify-content: center; /* Center the items horizontally */
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #fff;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: center; /* Center the items within the menu */
+}
+
+.navbar-item {
+  margin: 0 20px; /* Adjusts spacing between items */
+  position: relative;
+}
+
+.navbar-item a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+}
+
+.navbar-item.active a {
+  border-bottom: 2px solid blue;
+}
+
+.navbar-item.dropdown a::after {
+  content: "▼";
+  font-size: 12px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.navbar-item .dropdown-menu {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 1;
+}
+
+.dropdown-menu li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.dropdown-menu li a {
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+}
+
+.dropdown-menu li a:hover {
+  color: blue;
+}
+
+.navbar-search {
+  display: flex;
+  align-items: center;
+  margin-left: auto; /* Align search to the right */
+}
+
+.navbar-search input {
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.search-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+}
